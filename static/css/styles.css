@@ -1,0 +1,206 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #1E1E1E;
+}
+
+nav h2 {
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 20px;
+    color: #E0E0E0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #BB86FC;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Allows content to grow and push the game to the bottom */
+    max-width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.row-container {
+    display: flex;
+    gap: 16%;
+
+}
+
+.left {
+    width: 42%;
+}
+
+.right {
+    width: 42%;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #BB86FC;
+}
+
+h2 {
+    color: #BB86FC;
+    font-size: 27px;
+}
+
+p, li {
+    font-size: 18px;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    text-align: left;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #BB86FC;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #BB86FC;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #9B59B6;
+}
+
+/* Specific Section Styling */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.right-column ul {
+    padding-left: 20px;
+}
+
+#skills {
+    align-content: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: repeat(5, auto); /* Five rows with auto height */
+    gap: 15px;
+    max-width: '100%'; /* Adjust width if needed */
+}
+
+.skills-list li {
+    background: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skills-list li i {
+    font-size: 20px;
+    color: #f4b400;
+}
+
+.skills-list li:hover {
+    transform: scale(1.05);
+    background: #333;
+}
+
+
+.bottom-right {
+    position: fixed;
+    right: 10px;
+    padding-bottom: 1px;
+    bottom: 0;
+}
+
+/* Game Section Styling */
+#game {
+    width: 80%; /* Matches the max-width of .container */
+    margin: 20px auto;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#game-container {
+    width: 100%;
+    height: 40vh; /* Adjust height to fit nicely */
+    overflow: hidden;
+}
+
+
+
+
+#cat {
+    position: fixed;
+    width:50px; /* Adjust size */
+    height: auto;
+    pointer-events: none;
+}
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="{{ url_for('static', filename='js/cat.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Low Jin Yi</h2>
+            <ul>
+                <li><a href="{{ url_for('home') }}">About Me</a></li>
+                <li><a href="{{ url_for('projects') }}">My Projects</a></li>
+                <li><a href="https://github.com/22023942-JinYi" target="_blank" class="github-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/jin-yi-low-3a576b244/" target="_blank" class="fab fa-linkedin"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="projects-container">
+        <h1 class="project-title">My Projects</h1>
+        <div class="project">
+            <div class="row-container">
+                <div class="left-column">
+                    <h2 class="project-title">SOI ISLP Website (Flask Web Application)</h2>
+                    <p>The SOI ISLP Website is a Flask-based application that allows Republic Polytechnic students from School of Infocomm (SOI) to apply for International Service-Learning Program (ISLP) trips, 
+                        while staff can review, approve, and manage applications. It integrates Amazon RDS (MySQL) for data storage, 
+                        AWS S3 for file management, and Amazon Cognito for authentication. 
+                        Students can submit applications, view trip details, and receive email confirmations, 
+                        while staff can filter applications, approve/decline submissions, and manage trip details. </p>
+                        <a href="static/documents/Technical Document_LowJinYi (MySQL, S3, Cognito & Flask Application).pdf" class="btn" target="_blank">Documentation</a>
+                        <a href="https://github.com/22023942-JinYi/SOI-ISLP-FYP" class="btn" target="_blank">Codes</a>
+                </div>
+                <div class="right-column">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/quJEl_QYwsE?si=0aen8yNC4AV4o6H4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project">
+            <div class="row-container">
+                <div class="right-column">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/mi-SXrKS4Wg?si=MSvJss2_jhN55R6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="left-column">
+                    <h2 class="project-title">Expense and Income Manager (Android App)</h2>
+                    <p>The Expense and Income Manager is a budgeting app that helps users track their income and spending to stay within budget. 
+                        It features bar charts for monthly deficits, income, and expenses, categorized lists of transactions, 
+                        and options to add, edit, and manage financial entries for better financial planning.</p>
+                    <a href="https://github.com/C346-2024-Day4/mad-miniproject-22023942-JinYi" class="btn" target="_blank">Codes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="row-container">
+                <div class="left-column">
+                    <img width="100%" height="315" src="static/documents/circlefinder.io.jpg" class="logo-picture">
+                </div>
+                <div class="right-column">
+                    <h2 class="project-title">Circlefinder.io (Flask Web Application)</h2>
+                    <p>The Circlefinder Website is a Flask application developed for an internship project (Straits Construction) to help the Quality and Service Department (QSD) monitor employee clock-ins at project sites. 
+                        It features a Circle Generator for drawing circle, defining a radius, 
+                        and generating editable circles on a map, with the option to download the results. 
+                        This helps the company optimize network planning or surveillance camera placement by generating and visualizing 
+                        coverage areas on a map to ensure comprehensive monitoring and connectivity.
+                        Additionally, the Upload Excel function reads Clock Records from Excel sheets, 
+                        visualizes employee locations on a map, and allows filtering by employee and date, 
+                        with adjustable radius settings for project sites. The tool enhances site monitoring with real-time data updates and interactive map-based visualizations.</p>
+                    <a href="static/documents/Circle Finder 2.0 (Latest).pdf" class="btn" target="_blank">Documentation</a>
+                    <a href="https://github.com/22023942-JinYi/CircleFinder" class="btn" target="_blank">Codes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="row-container">
+                <div class="left-column">
+                    <h2 class="project-title">Profile Pictures Editor (Flask Web Application)</h2>
+                    <p>The Profile Pictures Editor is a Flask application developed for an internship project (Straits Construction) to simplify the process of cropping employee profile photos. 
+                        It allows users to drag and drop photos, select desired dimensions, 
+                        and batch process multiple images efficiently. Using face detection technology, 
+                        it automatically detects and crops faces while maintaining proper proportions to avoid distortion. 
+                        Photos that don't meet the cropping requirements are placed in an "unacceptable" folder, 
+                        with details logged in a text file. A progress bar provides real-time updates, 
+                        and users can download the cropped photos as a zip file once processing is complete.</p>
+                    <a href="static/documents/Profile Pictures Editor.pdf" class="btn" target="_blank">Documentation</a>
+                    <a href="https://github.com/22023942-JinYi/Profile-Pictures" class="btn" target="_blank">Codes</a>
+                </div>
+                <div class="right-column">
+                    <img width="100%" height="315" src="static/documents/ProfilePictureWeb.jpg">
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="project-title">Current Projects</h1>
+
+        <div class="project">
+            <div class="row-container">
+                <div class="left-column">
+                    <h2 class="project-title">Dreamland</h2>
+                    <p>Dreamland is a cafe and RPG fighting game set in a city overgrown with greenery, 
+                        where players battle mobs to collect special ingredients and materials for crafting cafe equipment, 
+                        food, drinks, and weapons. With no fixed fighting classes, 
+                        players can equip any weapon with unique skills. 
+                        The game features a detailed cooking system, 
+                        allowing manual preparation for higher quality items and fast production after mastering recipes. 
+                        Players can customize their cafes, explore others’ cafes, 
+                        and participate in a dynamic economy by selling creations. 
+                        Randomly spawning dungeons offer challenges and rewards. 
+                        The game will feature AI for enemies that learn and adapt to player attacks over time, increasing combat complexity.
+                        The game will be developed using Blender for assets, 
+                        first implemented on Roblox for feedback and then transferred to Unreal Engine for enhanced development.</p>
+                    <p>Currently in development (Will Update!)</p>
+                </div>
+                <div class="right-column">
+                    <video width="100%" height="315" src="static/documents/blender.mp4" loop autoplay muted playsinline></video>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <p class="bottom-right">jiinbh6@gmail.com</p>
+    <img src="{{ url_for('static', filename='images/cat_static.png') }}" 
+         data-moving="{{ url_for('static', filename='images/cat.gif') }}" 
+         data-paused="{{ url_for('static', filename='images/cat_static.png') }}" 
+         id="cat">
+</body>
+</html>
